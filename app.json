@@ -15,6 +15,7 @@
     "android": {
       "package": "sl.example.noorboys",
       "versionCode": 3,
+      "usesCleartextTraffic": true,
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/images/icon.png",

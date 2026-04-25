@@ -1,58 +1,53 @@
-// components/CustomSplashScreen.tsx
 import React from "react";
-import { Image, StyleSheet, Text, View } from "react-native";
+import { ImageBackground, StyleSheet, Text, View } from "react-native";
 
 export default function MySplashScreen() {
   return (
-    <View style={styles.container}>
-      {/* Your App Logo */}
-      <Image
-        source={require("../assets/images/splash-icon2.png")} // Update path to your logo
-        style={styles.logo}
-        resizeMode="contain"
-      />
+    <ImageBackground
+      source={require("../assets/images/splash-icon2.png")}
+      style={styles.container}
+      resizeMode="cover" // full screen cover karega
+    >
+      {/* Optional Overlay (agar text readable karna ho) */}
+      <View style={styles.overlay} />
 
-      {/* Loading Indicator */}
-      {/* <ActivityIndicator size="large" color="#007AFF" style={styles.loader} /> */}
-
-      {/* Powered by Wezsol Text */}
+      {/* Footer Text */}
       <View style={styles.footer}>
         <Text style={styles.poweredByText}>Powered by</Text>
-        <Text style={styles.wezsol}>Wezsol</Text>
+        <Text style={styles.SoftwareLinkers}>SoftwareLinkers</Text>
       </View>
-    </View>
+    </ImageBackground>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#FFFFFF", // Change to your brand color
     justifyContent: "center",
-    alignItems: "center",
   },
-  logo: {
-    width: 200,
-    height: 200,
-    marginBottom: 0,
+
+  overlay: {
+    ...StyleSheet.absoluteFillObject,
+    backgroundColor: "rgba(0,0,0,0.2)", // optional dark overlay
   },
-  loader: {
-    marginTop: 20,
-  },
+
   footer: {
     position: "absolute",
     bottom: 50,
+    width: "100%",
     alignItems: "center",
   },
+
   poweredByText: {
     fontSize: 14,
-    color: "#666666",
+    color: "#FFFFFF",
     fontFamily: "Blink-Regular",
   },
-  wezsol: {
+
+  SoftwareLinkers: {
     fontSize: 20,
     fontWeight: "bold",
-    color: "#007AFF", // Change to Wezsol brand color
+    color: "#FFFFFF",
     fontFamily: "Blink-Bold",
     marginTop: 4,
   },

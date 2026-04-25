@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Noor Boys",
-    "slug": "noor-boys",
+    "slug": "noor-boys-new",
     "version": "5.2.3",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -60,12 +60,12 @@
       "typedRoutes": true,
       "reactCompiler": true
     },
+    "owner": "talha7766",
     "extra": {
       "router": {},
       "eas": {
-        "projectId": "d8e0434f-ad82-423a-86b4-2994873665a8"
+        "projectId": "87101d91-6518-4dd2-a4e6-1b04763edaa1"
       }
-    },
-    "owner": "talha7766"
+    }
   }
 }

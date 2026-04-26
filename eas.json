@@ -6,16 +6,30 @@
   "build": {
     "development": {
       "developmentClient": true,
-      "distribution": "internal"
+      "distribution": "internal",
+      "env": {
+        "EXPO_PUBLIC_API_ENDPOINT": "http://182.180.52.241:4000",
+        "EXPO_PUBLIC_APP_KEY": "3f7b2a9e-d4c1-4e3f-8b1c-9e5a7b2c1d8f",
+        "EXPO_PUBLIC_SIGNING_SECRET": "9f8a7b6c5d4e3f2a1b0c9d8e7f6a5b4c3d2e1f0a9b8c7d6e5f4a3b2c1d0e9f8a"
+      }
     },
     "preview": {
-      "distribution": "internal"
+      "distribution": "internal",
+      "env": {
+        "EXPO_PUBLIC_API_ENDPOINT": "http://182.180.52.241:4000",
+        "EXPO_PUBLIC_APP_KEY": "3f7b2a9e-d4c1-4e3f-8b1c-9e5a7b2c1d8f",
+        "EXPO_PUBLIC_SIGNING_SECRET": "9f8a7b6c5d4e3f2a1b0c9d8e7f6a5b4c3d2e1f0a9b8c7d6e5f4a3b2c1d0e9f8a"
+      }
     },
     "production": {
       "autoIncrement": true,
-      // "sourceMaps": false,
       "android": {
         "buildType": "app-bundle"
+      },
+      "env": {
+        "EXPO_PUBLIC_API_ENDPOINT": "http://182.180.52.241:4000",
+        "EXPO_PUBLIC_APP_KEY": "3f7b2a9e-d4c1-4e3f-8b1c-9e5a7b2c1d8f",
+        "EXPO_PUBLIC_SIGNING_SECRET": "9f8a7b6c5d4e3f2a1b0c9d8e7f6a5b4c3d2e1f0a9b8c7d6e5f4a3b2c1d0e9f8a"
       }
     }
   },

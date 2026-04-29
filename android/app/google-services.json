@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "881125522607",
+    "project_id": "noor-boys-4c544",
+    "storage_bucket": "noor-boys-4c544.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:881125522607:android:5e7f0a13bf20bfd28ea85a",
+        "android_client_info": {
+          "package_name": "sl.example.noorboys"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMaEi277b__J13nWrIl0f5dkqS89ZKUTM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

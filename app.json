@@ -1,19 +1,20 @@
 {
   "expo": {
     "name": "Noor Boys",
-    "slug": "noor-boys-new",
+    "slug": "noor-boys",
     "version": "5.2.3",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "noorboys",
     "userInterfaceStyle": "automatic",
-    "newArchEnabled": true,
+    "newArchEnabled": false,
     "jsEngine": "hermes",
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "package": "sl.example.noorboys",
+      "googleServicesFile": "$GOOGLE_SERVICES_JSON",
       "versionCode": 3,
       "usesCleartextTraffic": true,
       "adaptiveIcon": {
@@ -60,11 +61,11 @@
       "typedRoutes": true,
       "reactCompiler": true
     },
-    "owner": "talha7766",
+    "owner": "softwarelinkers",
     "extra": {
       "router": {},
       "eas": {
-        "projectId": "87101d91-6518-4dd2-a4e6-1b04763edaa1"
+        "projectId": "19d28d32-0b1b-4869-af77-6463e1f8bfca"
       }
     }
   }
